@@ -9,10 +9,12 @@ export default function ServiceCard({ data }) {
                     loading="lazy"
                 />
             </div>
-            <h2 className="service-card__title">{ data.title }</h2>
-            <p className="service-card__description">
-                { data.description }
-            </p>
+            <div className="service-card__content">
+                <h2 className="service-card__title">{ data.title }</h2>
+                <p className="service-card__description">
+                    { data.description }
+                </p>
+            </div>
         </li>
     );
 }

@@ -14,6 +14,9 @@
 .home-link {
     color: var.$base-text;
     transition: 0.4s;
+    @media (max-width: var.$mobile-max) {  
+        display: none;
+    }  
     &:hover {
         color: rgb(255, 251, 0);
     }

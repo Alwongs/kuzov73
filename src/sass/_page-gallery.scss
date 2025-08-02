@@ -1,8 +1,13 @@
+@use "variables" as var;
+
 .gallery-list {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    @media (max-width: var.$mobile-max) {  
+        gap: 20px;       
+    }    
 }
 
 .gallery-card {
@@ -10,6 +15,10 @@
     width: 240px;
     height: 180px;
     overflow: hidden; /* чтобы рамка обрезала содержимое */
+    @media (max-width: var.$mobile-max) {  
+        width: 100%;
+        height: auto;       
+    }      
 }
 
 .gallery-card__image-cover {
