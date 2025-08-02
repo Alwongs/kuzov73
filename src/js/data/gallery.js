@@ -31,4 +31,4 @@ export const gallery = [
     },   
 ];
 
-export const galleryImageDirPath = "/images/gallery";
+export const galleryImageDirPath = import.meta.env.BASE_URL + "/images/gallery";

@@ -9,7 +9,7 @@ root.classList.add('website');
 
 createRoot(root).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/kuzov73">
             <App />
         </BrowserRouter>
     </StrictMode>,

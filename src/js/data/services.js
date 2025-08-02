@@ -1,4 +1,4 @@
-const imageDirPath = '/images/services';
+const imageDirPath = import.meta.env.BASE_URL + '/images/services';
 
 export const services = [
     {
