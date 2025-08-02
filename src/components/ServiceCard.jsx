@@ -6,6 +6,7 @@ export default function ServiceCard({ data }) {
                 <img
                     src={data.imagePath}
                     alt="Изображение"
+                    loading="lazy"
                 />
             </div>
             <h2 className="service-card__title">{ data.title }</h2>
