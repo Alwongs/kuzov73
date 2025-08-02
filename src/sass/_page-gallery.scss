@@ -1,0 +1,24 @@
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    border: 3px solid rgb(56, 75, 96);;
+    width: 240px;
+    height: 180px;
+    overflow: hidden; /* чтобы рамка обрезала содержимое */
+}
+
+.gallery-card__image-cover {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-card__image-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* изображение масштабируется и обрезается по необходимости */
+}

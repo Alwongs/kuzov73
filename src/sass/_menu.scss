@@ -1,0 +1,58 @@
+@use "variables" as var;
+
+.menu {
+    position: static;
+    @media (max-width: var.$mobile-max) {  
+        background-color: rgb(90, 109, 167);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        right: -110%;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        transition: .4s;
+        &.open {
+            right: 0;
+        }     
+    }  
+}
+.menu__header {
+    display: none;
+    @media (max-width: var.$mobile-max) {  
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 30px;
+        padding: 0 10px;   
+        margin-bottom: 90px;  
+    }       
+}
+.menu__close-btn {
+    display: none;
+    @media (max-width: var.$mobile-max) {  
+        display: block;
+        color: white;
+    }      
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    &__link {
+        color: var.$base-text;
+        transition: 0.4s;
+        &:hover {
+            color: rgb(255, 251, 0);
+        }
+    }
+    @media (max-width: var.$mobile-max) {  
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        background-color: rgb(90, 109, 167);
+        font-size: 34px;
+        letter-spacing: 1px;
+    }      
+}

@@ -1,0 +1,20 @@
+@use "sass:color";
+
+$desktop-min: 1024px;
+$tablet-max: 1023px;
+$tablet-min: 768px;
+$mobile-max: 767px;
+
+            /* ---- colors ---- */
+/* --- common --- */
+$white: rgb(228, 228, 228);
+$red: rgb(228, 15, 15);
+$blue: rgb(61, 108, 139);
+$green: green;
+$grey: grey;
+$yellow: rgb(230, 207, 0);
+$orange: orange;
+
+
+/* --- text --- */
+$base-text: rgb(36, 54, 87);

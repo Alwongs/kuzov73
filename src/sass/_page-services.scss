@@ -1,0 +1,23 @@
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    // border: 3px solid red;
+    width: 240px; 
+    &__title {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+}
+
+.service-card__image-cover {
+    // border: 5px solid green;
+    margin-bottom: 5px;
+    img {
+        width: 100%;
+    }
+}
