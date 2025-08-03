@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import "./sass/app.scss"; 
 import App from './App.jsx';
 
@@ -9,8 +9,8 @@ root.classList.add('website');
 
 createRoot(root).render(
     <StrictMode>
-        <BrowserRouter basename="/kuzov73">
+        <HashRouter basename="/kuzov73">
             <App />
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>,
 )
