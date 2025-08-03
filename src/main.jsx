@@ -9,7 +9,7 @@ root.classList.add('website');
 
 createRoot(root).render(
     <StrictMode>
-        <HashRouter basename="/kuzov73">
+        <HashRouter>
             <App />
         </HashRouter>
     </StrictMode>,
