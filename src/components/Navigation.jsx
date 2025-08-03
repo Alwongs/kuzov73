@@ -1,13 +1,17 @@
-import { Link } from 'react-router-dom';
+import NavigationLink from "../components/NavigationLink";
+import { navigationData } from "../js/data/navigation";
 
-export default function Navigation() {
+export default function Navigation({clickAction}) {
     return (
         <nav className="navigation">
-            <Link className="navigation__link" to="/about">О нас</Link>
-            <Link className="navigation__link" to="/services">Услуги</Link>
-            <Link className="navigation__link" to="/feedbacks">Отзывы</Link>
-            <Link className="navigation__link" to="/gallery">Галерея</Link>
-            <Link className="navigation__link" to="/contacts">Контакты</Link>
+
+            {navigationData?.map((item) => (
+                <NavigationLink
+                    key={item.id}
+                    data={item}
+                    clickAction={clickAction}
+                />
+            ))}
         </nav>
     );
 }

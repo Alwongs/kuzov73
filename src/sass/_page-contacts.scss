@@ -17,11 +17,11 @@
 .yandex-map-component {
     position: relative;
     overflow: hidden;
-    // border: 3px solid red;
+    border: 3px solid white;
     width: 560px;
     height: 400px;
     @media (max-width: var.$mobile-max) {  
-        width: 100%;
+        width: 90%;
         // height: auto;   
     }
     &__top-link {
