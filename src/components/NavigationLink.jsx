@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 
-export default function NavigationLink({data, clickAction}) {
+export default function NavigationLink({title, url, clickAction}) {
 
     return (
         <Link
             className="navigation__link"
-            to={data.url}
+            to={url}
             onClick={clickAction}
         >
-            { data.title }
+            { title }
         </Link>
     );
 }
